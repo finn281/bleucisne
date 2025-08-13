@@ -14,14 +14,14 @@ body {
 
 #background-gif{
     position: fixed;
-    left: 300px;
-    top:40%;
-    width: auto;
-    max-width: 90%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     z-index: -100000000;
     opacity: 0.5;
+    align-content: center;
 }
+
+
 
 #main-wrapper {
     position: relative;
