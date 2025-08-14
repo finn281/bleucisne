@@ -21,6 +21,10 @@ body {
     align-content: center;
 }
 
+#gifFrame {
+   margin-left: 50%;
+    
+}
 
 
 #main-wrapper {
@@ -31,7 +35,6 @@ body {
     column-gap: 0px;
     grid-template-columns: 1080px auto;
     padding: 0px;
-    border: 1px solid black;
 }
 
 
