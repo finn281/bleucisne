@@ -11,7 +11,13 @@
     
     <!-- Entire webpage -->
     <div id="main-wrapper">
-      <div id="dungeon"> <img src="background.png"> </div>
+      <div id="dungeon"> 
+          <button id="leaveButton">Leave dungeon</button>
+          <img id="hiddenGif" src="descend_animation.gif" style="display:none;">
+          
+          <img src="background.png"> 
+        
+      </div>
         
       <div> <p>game intro</p> </div>
         
@@ -155,4 +161,12 @@
     imgCave.src = 'finalGif.gif';
   });
     
+    
+  const leaveButton = document.getElementById('leaveButton');
+  const gif = document.getElementById('hiddenGif');
+
+  leaveButton.addEventListener('click', () => {
+    gif.src = gif.src.split('?')[0] + '?' + new Date().getTime();
+    gif.style.display = 'block';
+  });    
 </script>
