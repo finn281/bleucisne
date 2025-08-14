@@ -108,7 +108,9 @@
       <div><p>further interactions</p></div>
         
         <div id="dungeon"> 
-        <img src="finalCave.png">
+            <p>please... untether me</p>
+            <button id="swap-btn">disconnect them.</button>
+        <img id="dungeon-img" src="finalCave.png">
       </div> 
       <div> <p>make a choice</p> </div>
      
@@ -147,4 +149,10 @@
     const frameIndex = Math.floor(progress * totalFrames);
     img.src = frames[frameIndex].src;
   });
+    
+      const imgCave = document.getElementById('dungeon-img');
+  document.getElementById('swap-btn').addEventListener('click', () => {
+    imgCave.src = 'finalGif.gif';
+  });
+    
 </script>
