@@ -125,6 +125,15 @@
       </div> 
       <div> <p>make a choice</p> </div>
         
+         <div id="dungeon"> 
+    
+            <img class="centered" src="Digital%20angel.png">
+             
+             <button id="morph-btn">disconnect them.</button>
+        <img id="room-img" src="room.png">
+         </div> 
+      <div> <p>make a choice</p> </div>
+        
       
         
        <!-- <div id="dungeon"> 
@@ -159,6 +168,11 @@
       const imgCave = document.getElementById('dungeon-img');
   document.getElementById('swap-btn').addEventListener('click', () => {
     imgCave.src = 'finalGif.gif';
+  });
+    
+     const imgRoom = document.getElementById('room-img');
+  document.getElementById('morph-btn').addEventListener('click', () => {
+    imgRoom.src = 'morph.gif';
   });
     
     
