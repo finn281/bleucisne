@@ -7,11 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      
+    
 <img id="gifFrame" src="frames/frame0.png"> 
+     
+        
+    
     
     <!-- Entire webpage -->
     <div id="main-wrapper">
-      <div id="dungeon"> 
+         <div id="puzzle">
+            <img src="Puzzle.png">
+            <form id="text-in-frame">  
+                <input type="checkbox" id="robot" name="robot1" value="robotBool">
+                <label for="vehicle1"> I'm not a robot</label><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+     <div class="dungeon"> 
+          <button id="enterButton">Enter the dungeon</button>
+          <img src="entry.png">
+      </div>
+     <div class="GUI"> <p>game intro</p> </div>
+        
+      <div class="dungeon"> 
           <button id="leaveButton">Leave dungeon</button>
           <img id="hiddenGif" src="descend_animation.gif" style="display:none;">
           
@@ -21,11 +41,11 @@
         
       <div> <p>game intro</p> </div>
         
-      <div id="dungeon"> <img src="animationRoomBorder.gif"> </div>  
+      <div class="dungeon"> <img src="animationRoomBorder.gif"> </div>  
         
       <div> <p>first dialogue</p> </div>
         
-      <div id="dungeon"> <img src="scroll.png"> 
+      <div class="dungeon"> <img src="scroll.png"> 
         
       </div>
         
@@ -98,34 +118,27 @@
             </form> 
         </div>  
         
-      <div id="dungeon">
+      <div class="dungeon">
             <img src="bg_egg.png">
-            <div id="puzzle">
-                    <img src="Puzzle.png">
-                    <form id="text-in-frame">  
-                    <input type="checkbox" id="robot" name="robot1" value="robotBool">
-                    <label for="vehicle1"> I'm not a robot</label><br>
-                    <input type="submit" value="Submit">
-                    </form>
-                </div>
+            
           
       </div>
         
       <div><p>further interactions</p></div>
         
-        <div id="dungeon"> 
-            <p>please... untether me</p>
+        <div class="dungeon"> 
+           
             <button id="swap-btn">disconnect them.</button>
         <img id="dungeon-img" src="finalCave.png">
       </div> 
-      <div> <p>make a choice</p> </div>
+      <div> <p>please... <i>𝔲𝔫𝔱𝔢𝔱𝔥𝔢𝔯</i> me.</p> </div>
      
-      <div id="dungeon"> 
+      <div class="dungeon"> 
         <img src="room4border.png">
       </div> 
       <div> <p>make a choice</p> </div>
         
-         <div id="dungeon"> 
+         <div class="dungeon"> 
     
             <img class="centered" src="Digital%20angel.png">
              
@@ -136,7 +149,7 @@
         
       
         
-       <!-- <div id="dungeon"> 
+       <!-- <div class="dungeon"> 
         <img src="snake.png" width="90%">
       </div> 
       <div> <p>make a choice</p> </div> -->
