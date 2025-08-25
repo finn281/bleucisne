@@ -25,7 +25,7 @@
         
       <div class="dungeon"> 
           <button id="leaveButton">Leave dungeon</button>
-          <img id="hiddenGif" src="descend_animation.gif" style="display:none;">
+          <img id="hiddenGif" src="descend_animation.png">
           
           <img src="background.png"> 
         
@@ -198,11 +198,11 @@
   });
     
     
-  const leaveButton = document.getElementById('leaveButton');
-  const gif = document.getElementById('hiddenGif');
+ const leaveButton = document.getElementById('leaveButton');
+const gif = document.getElementById('hiddenGif');
 
-  leaveButton.addEventListener('click', () => {
-    gif.src = gif.src.split('?')[0] + '?' + new Date().getTime();
-    gif.style.display = 'block';
-  });    
+leaveButton.addEventListener('click', () => {
+  // Add the class to trigger the animation defined in the CSS
+  gif.classList.add('start-trapdoor-animation');
+});  
 </script>

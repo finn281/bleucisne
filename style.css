@@ -54,9 +54,23 @@ details {
 }
 
 #hiddenGif {
-    position: absolute;
-    top: -450px;
-    z-index: -900;
+  position: absolute;
+  top: -750px; /* Starts hidden above the screen */
+  left: 345px;
+  z-index: -900;
+}
+
+@keyframes trapdoor {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(800px); /* Moves it down into view */
+  }
+}
+
+.start-trapdoor-animation {
+  animation: trapdoor 4s steps(8) forwards;
 }
 
 #enterButton {
@@ -67,7 +81,7 @@ details {
 }
 #leaveButton {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
