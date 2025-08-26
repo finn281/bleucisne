@@ -43,6 +43,11 @@ summary{
     margin-left: auto;
 }
 
+iframe{
+    width: 1080px;
+    height: 1080px;
+}
+
 #gifFrame {
     position: fixed;
     top: 50%;
