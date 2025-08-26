@@ -20,7 +20,12 @@ details {
     position: absolute;
     top: 20%;
     left: 30%;
-    border: 1px solid black;
+    border: 1px solid blue;
+}
+summary{
+    color: #0000ff;
+    background-color: white;
+    padding: 2px;
 }
 
 #background-gif{
@@ -30,6 +35,12 @@ details {
     z-index: -100000000;
     opacity: 0.5;
     align-content: center;
+}
+
+#checkpoint {
+    padding: 1px;
+    border: 3px double black;
+    margin-left: auto;
 }
 
 #gifFrame {
@@ -112,7 +123,7 @@ button {
     position: relative;
     width: auto;
     margin-left: auto;
-    padding 3px;
+    padding 0px;
     align-content: center;
     /* image width (1080px) plus 6px border*/
     
@@ -122,11 +133,13 @@ button {
 
 
 .dungeon {
+    display: block;
     position: relative;
     border-style: none double none double;
     margin: auto;
     width: 1086px;
     overflow: hidden;
+    padding: 0px;
 }
 
 #intro {
