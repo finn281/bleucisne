@@ -38,13 +38,28 @@ summary{
 }
 
 #checkpoint {
-    padding: 1px;
+    position: absolute;
+    left: 20px;
+    top: 650px;
+    padding-left: 10px;
+    padding-top: 2px;
     border: 3px double black;
-    margin-right: auto;
+    z-index: 100000000;
 }
 
 #check {
+    position: relative;
     background: black;
+    height: 2600px;
+}
+
+#cherub {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: none;
+    z-index: 1000;
+    mix-blend-mode: screen;
 }
 
 iframe{

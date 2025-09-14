@@ -162,43 +162,27 @@
 
         <div class="dungeon" id="check">
             
-            <audio controls id="music">
+           <!-- <audio controls id="music">
                 <source src="egge.mp3" type="audio/mp3">
-            </audio>
+            </audio> -->
             
             <img src="skinnyAngel.gif">
-             <form id="checkpoint">  
-                <p>Please complete <i style="color:blue;">verification (?)</i> to proceed (0/7)</p>
-                <input type="checkbox" id="robot" name="robot1" value="robotBool">
-                <label for="vehicle1"> I'm not a robot</label>
-                
-                <input type="submit" value="Confirm">
-            </form>
             
+             <form id="checkpoint">
+              <p>Please complete <i style="color:blue;">verification (?)</i> to proceed (0/7)</p>
+              <input type="checkbox" id="robot" name="robot1" value="robotBool">
+              <label for="vehicle1"> I'm not a robot</label>
+              <input id="verification" type="button" value="Confirm">
+                </form>
+            
+            <img id="cherub" src="fadeIn_still.png" data-animated-src="fadeIn.gif">
             
         </div>
         
-     
-        <!--<div class="dungeon">
-            <iframe src="indexNew.html"></iframe>
-        </div> -->
-   
-        
-        
-        
-      
-        
-       <!-- <div class="dungeon"> 
-        <img src="snake.png" width="90%">
-      </div> 
-      <div> <p>make a choice</p> </div> -->
-        
     </div>
 
-</body>
-</html>
-
-<script>
+    
+    <script>
   const totalFrames = 16;
   const scrollLoopHeight = window.innerHeight; // Loop every 100% vh
   const img = document.getElementById('gifFrame');
@@ -235,4 +219,15 @@ leaveButton.addEventListener('click', () => {
   // Add the class to trigger the animation defined in the CSS
   gif.classList.add('start-trapdoor-animation');
 });  
+    
+      const cherubGif = document.getElementById('cherub');
+  document.getElementById('verification').addEventListener('click', () => {
+    cherubGif.src = 'fadeIn.gif';
+  });
+ 
 </script>
+    
+</body>
+</html>
+
+
