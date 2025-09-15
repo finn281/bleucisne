@@ -26,8 +26,12 @@
       </div>
         
       <div class="dungeon"> 
+           <audio controls id="music">
+                <source src="downwards.mp3" type="audio/mp3">
+            </audio>
           <button id="leaveButton">Leave dungeon</button>
           <img id="hiddenGif" src="descend_animation.png">
+       
           
           <img src="background.png"> 
         
@@ -48,7 +52,7 @@
                 <label for="fname"></label><br>
                 <input type="text" id="fname" name="fname" value="">
                 <br> <br>
-                <input type="submit" value="Confirm">
+                <input type="button" value="Confirm">
             </form>
         </details>
       </div>
@@ -60,7 +64,7 @@
             <form id="text-in-frame">  
                 <input type="checkbox" id="robot" name="robot1" value="robotBool">
                 <label for="vehicle1"> I'm not a robot</label><br>
-                <input type="submit" value="Submit">
+                <input type="button" value="Submit">
             </form>
         </div>
             <img src="hallOfWorship2.png">
@@ -74,7 +78,7 @@
                     <label for="fname"></label><br>
                     <input type="text" id="fname" name="fname" value="">
                     <br> <br>
-                    <input type="submit" value="Confirm">
+                    <input type="button" value="Confirm">
                 </form>
         </details>
                  <img src="seperator.png">
@@ -95,7 +99,7 @@
                     <label for="fname"></label><br>
                     <input type="text" id="fname" name="fname" value="">
                     <br> <br>
-                    <input type="submit" value="Confirm">
+                    <input type="button" value="Confirm">
                 </form>
              </details>
          </div>
@@ -113,7 +117,7 @@
                     <label for="fname"></label><br>
                     <input type="text" id="fname" name="fname" value="">
                     <br> <br>
-                    <input type="submit" value="Confirm">
+                    <input type="button" value="Confirm">
                 </form>
         </details>
       </div>
@@ -132,7 +136,7 @@
                     <label for="fname"></label><br>
                     <input type="text" id="fname" name="fname" value="">
                     <br> <br>
-                    <input type="submit" value="Confirm">
+                    <input type="button" value="Confirm">
                 </form>
         </details>
       </div> 
@@ -149,7 +153,7 @@
                 <label for="fname"></label><br>
                 <input type="text" id="fname" name="fname" value="">
                 <br> <br>
-                <input type="submit" value="Confirm">
+                <input type="button" value="Confirm">
             </form> 
           </details>
       </div> 
@@ -162,9 +166,7 @@
 
         <div class="dungeon" id="check">
             
-           <!-- <audio controls id="music">
-                <source src="egge.mp3" type="audio/mp3">
-            </audio> -->
+          
             
             <img src="skinnyAngel.gif">
             
@@ -213,11 +215,13 @@
       const imgCave = document.getElementById('dungeon-img');
   document.getElementById('swap-btn').addEventListener('click', () => {
     imgCave.src = 'finalGif.gif';
+      new Audio('untether.mp3').play();
   });
     
      const imgRoom = document.getElementById('room-img');
   document.getElementById('morph-btn').addEventListener('click', () => {
     imgRoom.src = 'morph.gif';
+      new Audio('cede.mp3').play();
   });
     
     
@@ -225,14 +229,26 @@
 const gif = document.getElementById('hiddenGif');
 
 leaveButton.addEventListener('click', () => {
-  // Add the class to trigger the animation defined in the CSS
   gif.classList.add('start-trapdoor-animation');
+    new Audio('door.mp3').play();
 });  
     
       const cherubGif = document.getElementById('cherub');
   document.getElementById('verification').addEventListener('click', () => {
     cherubGif.src = 'fadeIn.gif';
+      new Audio('transform.mp3').play();
   });
+        
+        //SOUND UPON OPENING CAPTCHAS
+        const allDetails = document.querySelectorAll('details');
+        const openSound = new Audio('Select.mp3');
+        allDetails.forEach(detailsElement => {
+            detailsElement.addEventListener('toggle', event => {
+                if (detailsElement.open) {
+                    openSound.play();
+                }
+            });
+        });
  
 </script>
     
