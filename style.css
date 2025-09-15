@@ -12,10 +12,26 @@ body {
     overflow-x: hidden;
     
     border-style:  double none double none;
-    
-    
 }
 
+p {
+    /*font-family: sans-serif;*/
+}
+
+.story {
+  z-index: 10000000000000;
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0px;
+}
+
+
+.vision {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 details {
     position: absolute;
     top: 20%;
@@ -69,13 +85,10 @@ iframe{
 
 #music {
     position: absolute;
-     background-color: #dbdbdb; 
+     background-color: white; 
      padding: 0px;
     right: 100px;
-}
-
-#music::-webkit-media-controls-enclosure {
-  background-color: transparent;
+     border: 1px solid black;
 }
 
 
@@ -122,7 +135,7 @@ iframe{
 
 #enterButton {
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -153,20 +166,14 @@ button {
     transform: translate(-50%, -50%);
 }
 
-
-
 #main-wrapper {
     position: relative;
     width: auto;
     margin-left: auto;
     padding 0px;
     align-content: center;
-    /* image width (1080px) plus 6px border*/
-    
-    
+    /* image width (1080px) plus 6px border*/    
 }
-
-
 
 .dungeon {
     display: block;
@@ -176,6 +183,7 @@ button {
     width: 1086px;
     overflow: hidden;
     padding: 0px;
+    
 }
 
 #intro {
@@ -213,8 +221,6 @@ form {
 }
 
 #enter {
-    /*animation: enterZoom 2.5s steps(4) infinite;*/
-    overflow: hidden;
 }
 
 

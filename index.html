@@ -19,16 +19,27 @@
     <!-- Entire webpage -->
     <div id="main-wrapper">
          
-        
+      <div class="dungeon">
+             <img class="vision" src="turning_vision.gif">
+          <div class="story" style="top: 360px">
+          <p>This vision is my stalker. I can't shake it off- even if I wanted to. The ambition to transform is my sole companion. Always ahead of me. I know how to fulfill my desire. </p>
+                 
+       </div>
+           <br><br><br><br>
+        </div>
+    
      <div class="dungeon"> 
           <button id="enterButton">Enter the dungeon</button>
           <img id="enter" src="entry.png">
       </div>
         
       <div class="dungeon"> 
-           <audio controls id="music">
+          <div id="music">
+           <audio controls>
                 <source src="downwards.mp3" type="audio/mp3">
             </audio>
+              <p>dungeon_ambiance.mp3</p>
+          </div>
           <button id="leaveButton">Leave dungeon</button>
           <img id="hiddenGif" src="descend_animation.png">
        
@@ -38,7 +49,10 @@
       </div>
         
         
-      <div class="dungeon"> <img src="animationRoomBorder.gif"> </div>  
+      <div class="dungeon"> 
+          <p class="story">I am changing...</p>
+          <img src="animationRoomBorder.gif"> 
+        </div>  
         
        
       <div class="dungeon"> <img src="scroll.png"> 
@@ -85,7 +99,7 @@
       </div>
         
         <div class="dungeon"> 
-            
+            <p class="story" style="color: white; top: 160px;">I am fully wired, ready to morph</p>
             <img class="centered" src="Digital%20angel.png">
             <button id="morph-btn">cede.</button>
             <img id="room-img" src="room.png">
@@ -166,7 +180,12 @@
 
         <div class="dungeon" id="check">
             
-          
+          <div id="music">
+           <audio controls>
+                <source src="girlsong.mp3" type="audio/mp3">
+            </audio>
+              <p>her_theme.mp3</p>
+          </div>
             
             <img src="skinnyAngel.gif">
             
@@ -184,7 +203,7 @@
             <br>
             <br>
             <br>
-            <p style="color: white">At this point I feel like almost <i>100% pure angel</i></p>
+            <p class="story" style="color: white; top:1050px;">At this point I feel like almost <i>100% pure angel</i></p>
             <img src="turning.gif">
             <img id="cherub" src="fadeIn_still.png" data-animated-src="fadeIn.gif">
             
