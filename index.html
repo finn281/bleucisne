@@ -20,11 +20,15 @@
     <div id="main-wrapper">
          
       <div class="dungeon">
-             <img class="vision" src="intro.gif">
+             <!--<img class="vision" src="intro.gif">-->
           <div class="story" style="top: 10px">
           <p>This vision is my stalker. I can't shake it off- even if I wanted to. The ambition to transform is my sole companion. Always ahead of me. I know how to fulfill my desire. </p>
-                 
+              
+              
+               
        </div>
+           <button id="enter-btn">Enter</button>
+            <img id="enter-img" src="intro.gif">
         </div>
     
     
@@ -237,6 +241,12 @@
   document.getElementById('morph-btn').addEventListener('click', () => {
     imgRoom.src = 'morph.gif';
       new Audio('cede.mp3').play();
+  });
+        
+             const enterGif = document.getElementById('enter-img');
+  document.getElementById('enter-btn').addEventListener('click', () => {
+    enterGif.src = 'enter.gif';
+      new Audio('enter.mp3').play();
   });
     
     
