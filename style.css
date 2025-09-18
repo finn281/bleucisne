@@ -207,7 +207,7 @@ form {
 #puzzle {
 
     position: absolute;
-    bottom: 50%;
+    bottom: 30%;
     left: 400px;
     animation: hoverUpDown 2.5s steps(4) infinite;
 }
