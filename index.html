@@ -12,20 +12,12 @@
       
     
 <img id="gifFrame" src="frames/frame0.png"> 
-     
-        
-    
-    
-    <!-- Entire webpage -->
+
     <div id="main-wrapper">
          
       <div class="dungeon">
-             <!--<img class="vision" src="intro.gif">-->
           <div class="story" style="top: 10px">
           <p>This vision is my stalker. I can't shake it off- even if I wanted to. The ambition to transform is my sole companion. Always ahead of me. I know how to fulfill my desire. </p>
-              
-              
-               
        </div>
            <button id="enter-btn">Enter</button>
             <img id="enter-img" src="intro.gif">
@@ -80,7 +72,6 @@
                 <input type="button" value="Submit">
             </form>
         </div>
-           <!-- <img src="hallOfWorship2.png">-->
                  <img src="room4border.png">
                    
         <details>
@@ -152,28 +143,6 @@
           </details>
       </div> 
      
-     <!-- <div class="dungeon"> 
-        <img src="room4border.png">
-          <details>
-                <summary>(?)</summary>  
-          <form>
-                <label for="fname">Type the characters seen in the image below</label>
-                <br> <br>
-                <img src="repent.png">
-                <br>
-                <label for="fname"></label><br>
-                <input type="text" id="fname" name="fname" value="">
-                <br> <br>
-                <input type="button" value="Confirm">
-            </form> 
-          </details>
-      </div> -->
-       
-  
-        
-          
-        
-        
 
         <div class="dungeon" id="check">
             
@@ -284,22 +253,12 @@ let solvedCaptchasCount = 0;
 const counterDisplay = document.getElementById('captcha-counter');
 const finalConfirmButton = document.getElementById('verification');
 
-/**
- * This function runs every time a captcha is solved correctly.
- * It increments the counter, updates the text, and checks if we're done.
- */
 function updateVerificationStatus() {
-  solvedCaptchasCount++; // Add 1 to our counter
-
-  // Update the "(X/7)" text on the page
+  solvedCaptchasCount++;
   counterDisplay.textContent = `(${solvedCaptchasCount}/5)`;
 
-  // If all 7 captchas are solved...
   if (solvedCaptchasCount === 5) {
-    // ...remove the 'disabled' attribute from the final button
     finalConfirmButton.disabled = false;
-
-    // Optional: Add some styling to show it's active
     finalConfirmButton.style.cursor = 'pointer';
     finalConfirmButton.style.backgroundColor = '#4CAF50'; // A green color
   }
@@ -313,10 +272,10 @@ function updateVerificationStatus() {
 // --- CAPTCHA 1 LOGIC ---
 const captcha1_button = document.getElementById('captcha1_button');
 const captcha1_input = document.getElementById('captcha1_input');
-const captcha1_answer = 'cede'; // The correct answer for the first captcha
+const captcha1_answer = 'cede'; 
 
 captcha1_button.addEventListener('click', () => {
-  // Check if the answer is correct AND if the button hasn't already been used
+
   if (captcha1_input.value.toLowerCase() === captcha1_answer && !captcha1_button.disabled) {
     
     // Disable this captcha's input and button to prevent reuse

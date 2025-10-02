@@ -37,6 +37,7 @@ details {
     top: 20%;
     left: 30%;
     border: 1px solid blue;
+    z-index: 100000000000000000000;
 }
 summary{
     color: #0000ff;
@@ -236,4 +237,24 @@ form {
     text-align: center;
     z-index: 100; 
     border: none;
+}
+
+#captcha1_button {
+  position: relative;
+}
+
+#captcha2_button {
+  position: relative;
+}
+
+#captcha3_button {
+  position: relative;
+}
+
+#captcha4_button {
+  position: relative;
+}
+
+#captcha5_button {
+  position: relative;
 }
