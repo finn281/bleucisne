@@ -418,45 +418,7 @@ captcha5_button.addEventListener('click', () => {
   }
 });
 
-// --- CAPTCHA 6 LOGIC ---
-const captcha6_button = document.getElementById('captcha6_button');
-const captcha6_input = document.getElementById('captcha6_input');
-const captcha6_feedback = document.getElementById('captcha6_feedback');
-const captcha6_answer = 'your_answer_here'; // <-- CHANGE THIS ANSWER
 
-captcha6_button.addEventListener('click', () => {
-  if (captcha6_input.value.toLowerCase() === captcha6_answer && !captcha6_button.disabled) {
-    captcha6_input.disabled = true;
-    captcha6_button.disabled = true;
-    captcha6_feedback.textContent = 'Correct!';
-    captcha6_feedback.style.color = 'green';
-    updateVerificationStatus();
-  } else if (!captcha6_button.disabled) {
-    captcha6_feedback.textContent = 'Incorrect, please try again.';
-    captcha6_feedback.style.color = 'red';
-    captcha6_input.value = '';
-  }
-});
-
-// --- CAPTCHA 7 LOGIC ---
-const captcha7_button = document.getElementById('captcha7_button');
-const captcha7_input = document.getElementById('captcha7_input');
-const captcha7_feedback = document.getElementById('captcha7_feedback');
-const captcha7_answer = 'your_answer_here'; // <-- CHANGE THIS ANSWER
-
-captcha7_button.addEventListener('click', () => {
-  if (captcha7_input.value.toLowerCase() === captcha7_answer && !captcha7_button.disabled) {
-    captcha7_input.disabled = true;
-    captcha7_button.disabled = true;
-    captcha7_feedback.textContent = 'Correct!';
-    captcha7_feedback.style.color = 'green';
-    updateVerificationStatus();
-  } else if (!captcha7_button.disabled) {
-    captcha7_feedback.textContent = 'Incorrect, please try again.';
-    captcha7_feedback.style.color = 'red';
-    captcha7_input.value = '';
-  }
-});
 
  
 </script>
