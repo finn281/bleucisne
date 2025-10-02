@@ -2,12 +2,7 @@
 
 body {
     image-rendering: pixelated;
-    /*background-color: #dbdbdb;*/
-    /*background-image: url(ourobosTurn.gif);
-    background-size: cover;*/
     position: relative;
-    /*font-family: "Xanh Mono", monospace;
-    font-size: 12px;*/
     width: auto;
     overflow-x: hidden;
     
