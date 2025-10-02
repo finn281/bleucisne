@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1080, initial-scale=0.4">
-    <title>bleu/cisne_soluble</title>
+    <title>dungeonscrolling...</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
 
@@ -55,21 +55,20 @@
         </div>  
         
        
-      <div class="dungeon"> <img src="scroll.gif"> 
-        <details>
-        <summary>(?)</summary>  
-          <form>
-                <label for="fname">Type the characters seen in the image below</label>
-                <br> <br>
-                <img src="cede.png">
-                <br>
-                <label for="fname"></label><br>
-                <input type="text" id="fname" name="fname" value="">
-                <br> <br>
-                <input type="button" value="Confirm">
-            </form>
-        </details>
-      </div>
+      <div class="dungeon">
+  <img src="scroll.gif">
+  <details>
+    <summary>(?)</summary>
+    <form id="captcha1_form"> <label for="captcha1_input">Type the characters seen in the image below</label>
+      <br><br>
+      <img id="captcha1_image" src="cede.png"> <br>
+      <span id="captcha1_feedback" class="feedback-message"></span>
+      <br>
+      <input type="text" id="captcha1_input" name="fname"> <br><br>
+      <button type="button" id="captcha1_button">Confirm</button>
+    </form>
+  </details>
+</div>
         
         
              <div class="dungeon">
@@ -83,19 +82,19 @@
         </div>
            <!-- <img src="hallOfWorship2.png">-->
                  <img src="room4border.png">
-                     <details>
-                        <summary>(?)</summary>  
-                    <form>
-                    <label for="fname">Type the characters seen in the image below</label>
-                    <br> <br>
-                    <img src="bypass.png">
-                    <br>
-                    <label for="fname"></label><br>
-                    <input type="text" id="fname" name="fname" value="">
-                    <br> <br>
-                    <input type="button" value="Confirm">
-                </form>
+                   
+        <details>
+            <summary>(?)</summary>
+            <form id="captcha2_form"> <label for="captcha2_input">Type the characters seen in the image below</label>
+              <br><br>
+              <img id="captcha2_image" src="bypass.png"> <br>
+              <span id="captcha2_feedback" class="feedback-message"></span>
+              <br>
+              <input type="text" id="captcha2_input" name="fname"> <br><br>
+              <button type="button" id="captcha2_button">Confirm</button>
+            </form>
         </details>
+                 
                  <img src="seperator.png">
       </div>
         <div class="dungeon"> 
@@ -107,37 +106,33 @@
             <img class="centered" src="Digital%20angel.png">
             <button id="morph-btn">pupate</button>
             <img id="room-img" src="room.png">
-              <details>
-                <summary>(?)</summary>  
-                <form>
-                    <label for="fname">Type the characters seen in the image below</label>
-                    <br> <br>
-                    <img src="godspeed.png">
-                    <br>
-                    <label for="fname"></label><br>
-                    <input type="text" id="fname" name="fname" value="">
-                    <br> <br>
-                    <input type="button" value="Confirm">
+            <details>
+                <summary>(?)</summary>
+                <form id="captcha3_form"> <label for="captcha3_input">Type the characters seen in the image below</label>
+                  <br><br>
+                  <img id="captcha3_image" src="godspeed.png"> <br>
+                  <span id="captcha3_feedback" class="feedback-message"></span>
+                  <br>
+                  <input type="text" id="captcha3_input" name="fname"> <br><br>
+                  <button type="button" id="captcha3_button">Confirm</button>
                 </form>
-             </details>
+          </details>
          </div>
 
         
       <div class="dungeon">
             <img src="bg_egg.png">
             <details>
-                <summary>(?)</summary>  
-                <form>
-                    <label for="fname">Type the characters seen in the image below</label>
-                    <br> <br>
-                    <img src="crawl.png">
-                    <br>
-                    <label for="fname"></label><br>
-                    <input type="text" id="fname" name="fname" value="">
-                    <br> <br>
-                    <input type="button" value="Confirm">
+                <summary>(?)</summary>
+                <form id="captcha4_form"> <label for="captcha4_input">Type the characters seen in the image below</label>
+                  <br><br>
+                  <img id="captcha4_image" src="crawl.png"> <br>
+                  <span id="captcha4_feedback" class="feedback-message"></span>
+                  <br>
+                  <input type="text" id="captcha4_input" name="fname"> <br><br>
+                  <button type="button" id="captcha4_button">Confirm</button>
                 </form>
-        </details>
+          </details>
       </div>
         
         
@@ -145,18 +140,16 @@
             <button id="swap-btn">disconnect them.</button>
             <img id="dungeon-img" src="finalCave.png">
             <details>
-                <summary>(?)</summary>  
-                <form>
-                    <label for="fname">Type the characters seen in the image below</label>
-                    <br> <br>
-                    <img src="detach.png">
-                    <br>
-                    <label for="fname"></label><br>
-                    <input type="text" id="fname" name="fname" value="">
-                    <br> <br>
-                    <input type="button" value="Confirm">
+                <summary>(?)</summary>
+                <form id="captcha5_form"> <label for="captcha5_input">Type the characters seen in the image below</label>
+                  <br><br>
+                  <img id="captcha5_image" src="detach.png"> <br>
+                  <span id="captcha5_feedback" class="feedback-message"></span>
+                  <br>
+                  <input type="text" id="captcha5_input" name="fname"> <br><br>
+                  <button type="button" id="captcha5_button">Confirm</button>
                 </form>
-        </details>
+          </details>
       </div> 
      
      <!-- <div class="dungeon"> 
@@ -194,10 +187,12 @@
             <img src="skinnyAngel.gif">
             
              <form id="checkpoint">
-              <p>Please complete <i style="color:blue;">verification (?)</i> to proceed (0/7)</p>
-              <input type="checkbox" id="robot" name="robot1" value="robotBool">
-              <label for="vehicle1"> I'm not a robot</label>
-              <input id="verification" type="button" value="Confirm">
+                  <p>Please complete <i style="color:blue;">verification (?)</i> to proceed <span id="captcha-counter">(0/5)</span></p>
+
+                  <input type="checkbox" id="robot" name="robot1" value="robotBool">
+                  <label for="vehicle1"> I'm not a robot</label>
+
+                  <input id="verification" type="button" value="Confirm" disabled>
                 </form>
             
             <br>
@@ -278,6 +273,191 @@ leaveButton.addEventListener('click', () => {
                 }
             });
         });
+        
+        
+    // --- GLOBAL VERIFICATION TRACKER ---
+
+// 1. A counter to track solved captchas
+let solvedCaptchasCount = 0;
+
+// 2. Get references to the UI elements we need to update
+const counterDisplay = document.getElementById('captcha-counter');
+const finalConfirmButton = document.getElementById('verification');
+
+/**
+ * This function runs every time a captcha is solved correctly.
+ * It increments the counter, updates the text, and checks if we're done.
+ */
+function updateVerificationStatus() {
+  solvedCaptchasCount++; // Add 1 to our counter
+
+  // Update the "(X/7)" text on the page
+  counterDisplay.textContent = `(${solvedCaptchasCount}/5)`;
+
+  // If all 7 captchas are solved...
+  if (solvedCaptchasCount === 5) {
+    // ...remove the 'disabled' attribute from the final button
+    finalConfirmButton.disabled = false;
+
+    // Optional: Add some styling to show it's active
+    finalConfirmButton.style.cursor = 'pointer';
+    finalConfirmButton.style.backgroundColor = '#4CAF50'; // A green color
+  }
+}
+
+
+// --- INDIVIDUAL CAPTCHA LOGIC (TEMPLATE) ---
+// You will need to REPEAT this block of code for EACH of your 7 captchas.
+// Just change the IDs and the correct answer for each one.
+
+// --- CAPTCHA 1 LOGIC ---
+const captcha1_button = document.getElementById('captcha1_button');
+const captcha1_input = document.getElementById('captcha1_input');
+const captcha1_answer = 'cede'; // The correct answer for the first captcha
+
+captcha1_button.addEventListener('click', () => {
+  // Check if the answer is correct AND if the button hasn't already been used
+  if (captcha1_input.value.toLowerCase() === captcha1_answer && !captcha1_button.disabled) {
+    
+    // Disable this captcha's input and button to prevent reuse
+    captcha1_input.disabled = true;
+    captcha1_button.disabled = true;
+    
+    // Run our main update function
+    updateVerificationStatus();
+      captcha1_feedback.textContent = 'Correct!';
+  } else {
+    // Optional: Handle incorrect answers
+    captcha1_feedback.textContent = 'Incorrect, please try again.';
+    captcha1_input.value = ''; // Clear the input
+  }
+});
+
+// --- CAPTCHA 2 LOGIC ---
+// const captcha2_button = document.getElementById('captcha2_button');
+// ...and so on for all 7 captchas.
+        const captcha2_button = document.getElementById('captcha2_button');
+const captcha2_input = document.getElementById('captcha2_input');
+const captcha2_answer = 'bypass'; // The correct answer for the first captcha
+
+captcha2_button.addEventListener('click', () => {
+  // Check if the answer is correct AND if the button hasn't already been used
+  if (captcha2_input.value.toLowerCase() === captcha2_answer && !captcha2_button.disabled) {
+    
+    // Disable this captcha's input and button to prevent reuse
+    captcha2_input.disabled = true;
+    captcha2_button.disabled = true;
+    
+    // Run our main update function
+      captcha2_feedback.textContent = 'Correct!';
+    updateVerificationStatus();
+  } else {
+    // Optional: Handle incorrect answers
+    captcha2_feedback.textContent = 'Incorrect, please try again.';
+    captcha2_input.value = ''; // Clear the input
+  }
+});
+        
+        // --- CAPTCHA 3 LOGIC ---
+const captcha3_button = document.getElementById('captcha3_button');
+const captcha3_input = document.getElementById('captcha3_input');
+const captcha3_feedback = document.getElementById('captcha3_feedback');
+const captcha3_answer = 'godspeed'; // <-- CHANGE THIS ANSWER
+
+captcha3_button.addEventListener('click', () => {
+  if (captcha3_input.value.toLowerCase() === captcha3_answer && !captcha3_button.disabled) {
+    captcha3_input.disabled = true;
+    captcha3_button.disabled = true;
+    captcha3_feedback.textContent = 'Correct!';
+    captcha3_feedback.style.color = 'green';
+    updateVerificationStatus();
+  } else if (!captcha3_button.disabled) {
+    captcha3_feedback.textContent = 'Incorrect, please try again.';
+    captcha3_feedback.style.color = 'red';
+    captcha3_input.value = '';
+  }
+});
+
+// --- CAPTCHA 4 LOGIC ---
+const captcha4_button = document.getElementById('captcha4_button');
+const captcha4_input = document.getElementById('captcha4_input');
+const captcha4_feedback = document.getElementById('captcha4_feedback');
+const captcha4_answer = 'crawl'; // <-- CHANGE THIS ANSWER
+
+captcha4_button.addEventListener('click', () => {
+  if (captcha4_input.value.toLowerCase() === captcha4_answer && !captcha4_button.disabled) {
+    captcha4_input.disabled = true;
+    captcha4_button.disabled = true;
+    captcha4_feedback.textContent = 'Correct!';
+    captcha4_feedback.style.color = 'green';
+    updateVerificationStatus();
+  } else if (!captcha4_button.disabled) {
+    captcha4_feedback.textContent = 'Incorrect, please try again.';
+    captcha4_feedback.style.color = 'red';
+    captcha4_input.value = '';
+  }
+});
+
+// --- CAPTCHA 5 LOGIC ---
+const captcha5_button = document.getElementById('captcha5_button');
+const captcha5_input = document.getElementById('captcha5_input');
+const captcha5_feedback = document.getElementById('captcha5_feedback');
+const captcha5_answer = 'detach'; // <-- CHANGE THIS ANSWER
+
+captcha5_button.addEventListener('click', () => {
+  if (captcha5_input.value.toLowerCase() === captcha5_answer && !captcha5_button.disabled) {
+    captcha5_input.disabled = true;
+    captcha5_button.disabled = true;
+    captcha5_feedback.textContent = 'Correct!';
+    captcha5_feedback.style.color = 'green';
+    updateVerificationStatus();
+  } else if (!captcha5_button.disabled) {
+    captcha5_feedback.textContent = 'Incorrect, please try again.';
+    captcha5_feedback.style.color = 'red';
+    captcha5_input.value = '';
+  }
+});
+
+// --- CAPTCHA 6 LOGIC ---
+const captcha6_button = document.getElementById('captcha6_button');
+const captcha6_input = document.getElementById('captcha6_input');
+const captcha6_feedback = document.getElementById('captcha6_feedback');
+const captcha6_answer = 'your_answer_here'; // <-- CHANGE THIS ANSWER
+
+captcha6_button.addEventListener('click', () => {
+  if (captcha6_input.value.toLowerCase() === captcha6_answer && !captcha6_button.disabled) {
+    captcha6_input.disabled = true;
+    captcha6_button.disabled = true;
+    captcha6_feedback.textContent = 'Correct!';
+    captcha6_feedback.style.color = 'green';
+    updateVerificationStatus();
+  } else if (!captcha6_button.disabled) {
+    captcha6_feedback.textContent = 'Incorrect, please try again.';
+    captcha6_feedback.style.color = 'red';
+    captcha6_input.value = '';
+  }
+});
+
+// --- CAPTCHA 7 LOGIC ---
+const captcha7_button = document.getElementById('captcha7_button');
+const captcha7_input = document.getElementById('captcha7_input');
+const captcha7_feedback = document.getElementById('captcha7_feedback');
+const captcha7_answer = 'your_answer_here'; // <-- CHANGE THIS ANSWER
+
+captcha7_button.addEventListener('click', () => {
+  if (captcha7_input.value.toLowerCase() === captcha7_answer && !captcha7_button.disabled) {
+    captcha7_input.disabled = true;
+    captcha7_button.disabled = true;
+    captcha7_feedback.textContent = 'Correct!';
+    captcha7_feedback.style.color = 'green';
+    updateVerificationStatus();
+  } else if (!captcha7_button.disabled) {
+    captcha7_feedback.textContent = 'Incorrect, please try again.';
+    captcha7_feedback.style.color = 'red';
+    captcha7_input.value = '';
+  }
+});
+
  
 </script>
     
